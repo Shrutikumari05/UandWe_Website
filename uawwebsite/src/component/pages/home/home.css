@@ -20,14 +20,16 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: rgb(247, 247, 247);
+  /* background-color: rgb(219, 219, 219); */
   transform: translateZ(0px);
   border-radius: 0px;
   gap: 60px;
   padding: 100px;
   position: relative;
 }
-
+h1 {
+  font-size: 58px !important;
+}
 .textDiv {
   width: 100%;
   height: auto;
@@ -54,12 +56,9 @@
   color: rgb(23, 36, 64);
 }
 .homeContent span {
-  font-size: 56px;
+  font-size: 64px;
 }
 
-h1 {
-  font-size: 58px;
-}
 .middleSection {
   /*place-content: center;
   align-items: center;
@@ -74,18 +73,15 @@ h1 {
   position: relative;
   width: 101%;*/
 
-  place-content: center;
-  align-items: center;
-  background-color: rgb(213, 209, 205);
-  display: flex;
-  flex: 0 0 auto;
-  flex-flow: column;
-  gap: 80px;
-  height: min-content;
-  overflow: hidden;
-  padding: 100px;
   /* position: relative; */
   /* width: 100%; */
+
+  overflow: hidden;
+  place-content: center;
+  align-items: center;
+  padding: 100px;
+  gap: 50px;
+  flex-flow: column;
 }
 
 .midDiv h6 {
@@ -128,6 +124,9 @@ h1 {
 .midDiv {
   /* margin-bottom: 8rem; */
   /* padding-left: 2rem; */
+  display: flex;
+  flex: 0 0 auto;
+  height: min-content;
   overflow: hidden;
 }
 
@@ -175,20 +174,39 @@ h1 {
 .slideInRight {
   animation: slideInRight 0.5s ease-in;
 }
-
-.cardView {
-  place-content: center;
+.testimonials {
+  place-content: center flex-start;
   align-items: center;
-  /* background-color: rgb(208, 148, 148); */
-  border-radius: 70px;
+  display: flex;
+  gap: 0px;
+  height: min-content;
+  overflow: hidden;
+  padding: 100px;
+  position: relative;
+  /* width: 100%; */
+  /* z-index: 0; */
+}
+.card_main {
+  align-items: center;
+  background-color: rgb(219, 219, 219);
+  border-radius: 40px;
   display: flex;
   /* flex: 1 0 0px; */
-  /* flex-flow: column; */
-  /* gap: 20px; */
-  height: min-content;
-  min-height: 400px;
+  flex-flow: column;
+  gap: 40px;
+  height: 400px;
+  min-height: 500px;
   overflow: hidden;
-  padding: 80px;
+  padding: 40px;
   position: relative;
-  box-shadow: 2rem;
+  /* width: 1px; */
+  /* will-change: var(--framer-will-change-override, transform); */
+}
+.card-text {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  /* text-alignment: center; */
+  color: rgb(46, 57, 81);
 }
