@@ -1,3 +1,10 @@
 .navSec {
   margin-bottom: 100px;
 }
+.navbarDiv {
+  color: rgb(33, 32, 32);
+}
+.custom-navbar .navbarDiv .nav-link {
+  color: rgb(77, 77, 77);
+  font-weight: 600;
+}

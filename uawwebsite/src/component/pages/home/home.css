@@ -2,6 +2,7 @@
   scroll-behavior: inherit;
   box-sizing: border-box;
 }
+
 .homeContent {
   /*place-content: center flex-start;
   align-items: center;
@@ -26,6 +27,8 @@
   gap: 60px;
   padding: 100px;
   position: relative;
+  margin-bottom: 15rem;
+  bottom: 30px;
 }
 h1 {
   font-size: 58px !important;
@@ -129,7 +132,6 @@ h1 {
   height: min-content;
   overflow: hidden;
 }
-
 .lastDiv {
   place-content: center;
   align-items: center;
@@ -162,6 +164,9 @@ h1 {
   animation: slideInLeft 0.5s ease-in;
 }
 
+.slideInRight {
+  animation: slideInRight 0.5s ease-in;
+}
 @keyframes slideInRight {
   from {
     transform: translateX(300px);
@@ -170,11 +175,7 @@ h1 {
     transform: translateX(0);
   }
 }
-
-.slideInRight {
-  animation: slideInRight 0.5s ease-in;
-}
-.testimonials {
+/*.testimonials {
   place-content: center flex-start;
   align-items: center;
   display: flex;
@@ -184,24 +185,97 @@ h1 {
   padding: 100px;
   position: relative;
   /* width: 100%; */
-  /* z-index: 0; */
+/* z-index: 0; */
+
+.testimonials {
+  place-content: center flex-start;
+  align-items: center;
+  /* background-color: rgb(20, 33, 61); */
+  display: flex;
+  flex: 0 0 auto;
+  flex-flow: column;
+  gap: 58px;
+  height: min-content;
+  overflow: hidden;
+  padding: 100px;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+.carddd {
+  place-content: center;
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-flow: row;
+  gap: 20px;
+  height: min-content;
+  max-width: 1000px;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  transform: perspective(1200px);
+  width: 100%;
+  z-index: 2;
 }
 .card_main {
+  place-content: center;
+  align-items: center;
+  background-color: rgb(203, 200, 200);
+  border-radius: 40px;
+  display: flex;
+  flex: 1 0 0px;
+  flex-flow: column;
+  gap: 40px;
+  height: 450px;
+  min-height: 500px;
+  overflow: hidden;
+  padding: 40px;
+  position: relative;
+  will-change: var(--framer-will-change-override, transform);
+}
+.card-img-top {
+  flex: 0 0 auto;
+  height: 177px;
+  /*left: calc(55% - 90px);*/
+  padding: 20px;
+  position: absolute;
+  top: 49px;
+  width: 232px;
+  z-index: 1;
+}
+p {
+  bottom: 114px;
+  flex: 0 0 auto;
+  height: auto;
+  left: 50%;
+  overflow: visible;
+  position: absolute;
+  transform: translateX(-50%);
+  white-space: pre-wrap;
+  width: 240px;
+  padding: 10px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  z-index: 1;
+}
+
+/*.card_main {
   align-items: center;
   background-color: rgb(219, 219, 219);
   border-radius: 40px;
   display: flex;
   /* flex: 1 0 0px; */
-  flex-flow: column;
+/* flex-flow: column;
   gap: 40px;
   height: 400px;
   min-height: 500px;
   overflow: hidden;
   padding: 40px;
-  position: relative;
-  /* width: 1px; */
-  /* will-change: var(--framer-will-change-override, transform); */
-}
+  position: relative;*/
+/* width: 1px; */
+/* will-change: var(--framer-will-change-override, transform); */
+
 .card-text {
   font-family: "DM Sans", sans-serif;
   font-size: 18px;

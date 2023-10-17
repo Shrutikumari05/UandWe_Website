@@ -10,26 +10,30 @@ function Footer() {
           // style={{ backgroundColor: "black" }}
         >
           <div className="row">
-            <div className="col-xl-3 offset-xl-1 col-lg-2 col-md-6 mt-5">
+            <div className="col-xl-3 offset-xl-1 col-lg-2 col-md-6 mt-3">
               <div className="">
                 <h5>Useful Link</h5>
                 <ul className="list-unstyled">
-                  <li>
+                  <li className="navItem">
                     <a href="#" className="text-decoration-none">
                       Home
                     </a>
                   </li>
-                  <li>
-                    <a href="#" className="text-decoration-none">
+                  <li className="navItem">
+                    <a
+                      href="#"
+                      className="text-decoration-none"
+                      style={{ color: "white" }}
+                    >
                       About Us
                     </a>
                   </li>
-                  <li>
+                  <li className="navItem">
                     <a href="#" className="text-decoration-none">
                       Partners
                     </a>
                   </li>
-                  <li>
+                  <li className="navItem">
                     <a href="#" className="text-decoration-none">
                       Careers
                     </a>
@@ -37,7 +41,7 @@ function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="col-xl-3 col-lg-3 col-md-6 mt-5">
+            <div className="col-xl-3 col-lg-3 col-md-6 mt-3">
               <div>
                 <h5>Services</h5>
                 <ul className="list-unstyled">
@@ -59,7 +63,7 @@ function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="col-xl-3 col-lg-3 col-md-6 mt-5 ">
+            <div className="col-xl-3 col-lg-3 col-md-6 mt-3">
               <div>
                 <h5>Stay in touch</h5>
                 <ul className="list-unstyled mt-3">
@@ -81,7 +85,7 @@ function Footer() {
             </div>
           </div>
           <div className="d-flex justify-content-left">
-            <div className="copyright mt-5">
+            <div className="copyright mt-3">
               <h6>© UANDWE 2023</h6>
             </div>
           </div>

@@ -1,4 +1,4 @@
-//import React from "react";
+import React from "react";
 import "./home.css";
 //import img3 from "./component/assets/img3.jpg";
 import img2 from "../../assets/img2.jpg";
@@ -6,27 +6,37 @@ import img15 from "../../assets/img15.jpg";
 import img13 from "../../assets/img13.jpg";
 import img14 from "../../assets/img14.jpg";
 import img4 from "../../assets/img4.jpg";
-// import unused1 from "../../assets/unused1.webp";
-// import unused2 from "../../assets/unused2.webp";
+import unused1 from "../../assets/unused1.webp";
+import unused2 from "../../assets/unused2.webp";
 // import React, { useState, useEffect } from "react";
 
 function Home() {
   return (
     // <div>
     <div className="container-fluid home">
-      <div className="container">
-        <div className="row gx-0 d-flex homeContent">
+      <div className="container hero d-flex ">
+        <div className="row gx-0 d-flex homeContent mt-5">
           <div className="col-6 d-grid">
             <span className="textDiv d-block">Engineering</span>
             <span className="textDiv">Redefined</span>
-            <h6 className="homeSubSec">
+            <h6 className="homeSubSec ">
               Seasoned Technopreneurs, Pioneering Software Solutions{" "}
             </h6>
           </div>
-          <div class8remName="col-6 imgSection d-grid">
-            {/* <img src={unused1} class="rounded heroImg" alt="" /> */}
-            {/* <img src={unused2} class="rounded heroImg" alt="" /> */}
-          </div>
+        </div>
+        <div class8remName="col-6 imgSection d-flex mt-4">
+          <img
+            src={unused2}
+            class="rounded heroImg"
+            alt=""
+            style={{ width: "200px", height: "400px" }}
+          />
+          <img
+            src={unused1}
+            class="rounded heroImg"
+            alt=""
+            style={{ width: "285px", height: "180px" }}
+          />
         </div>
       </div>
 
@@ -104,41 +114,42 @@ function Home() {
           <h1 className="textDiv homeText lastDiv d-flex  mt-5 justify-content-center">
             Our Partners
           </h1>
-
-          <div className="col-4 myCard rounded px-5 mt-5">
-            <div class="card_main ">
-              <img src={img4} class="card-img-top rounded" alt="" />
-              <div class="card-body">
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
+          <div className="carddd">
+            <div className="col-4 myCard rounded px-5 mt-5">
+              <div class="card_main ">
+                <img src={img4} class="card-img-top rounded" alt="" />
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="col-4 myCard  px-5 mt-5">
-            <div class="card_main ">
-              <img src={img4} class="card-img-top rounded" alt="" />
-              <div class="card-body">
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
+            <div className="col-4 myCard  px-5 mt-5">
+              <div class="card_main ">
+                <img src={img4} class="card-img-top rounded" alt="" />
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-4 myCard px-5 mt-5">
-            <div class="card_main">
-              <img src={img4} class="card-img-top rounded" alt="" />
-              <div class="card-body">
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
+            <div className="col-4 myCard px-5 mt-5">
+              <div class="card_main">
+                <img src={img4} class="card-img-top rounded" alt="" />
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

@@ -1,5 +1,5 @@
 .footerDiv {
-  /* place-content: center; */
+  place-content: center;
   align-items: center;
   background-color: rgb(0, 0, 0);
   /* display: flex; */
@@ -10,6 +10,9 @@
   overflow: visible;
   padding: 60px 40px 30px;
   position: relative;
-  /* width: 100%; */
   top: 6rem;
+  color: antiquewhite;
+}
+.list-unstyled a {
+  color: beige;
 }

@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import React from "react";
+import React, { Suspense } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Navbar from "./component/layout/Navbar";
 import Footer from "./component/layout/Footer";
@@ -12,17 +12,18 @@ function App() {
       <Router>
         <div>
           <Navbar />
-
-          <Routes>
-            {routes.map((ele) => (
-              <Route
-                key={ele.identifier}
-                exact
-                path={ele.path}
-                element={ele.components}
-              />
-            ))}
-          </Routes>
+          <Suspense fallback={<div></div>}>
+            <Routes>
+              {routes.map((ele) => (
+                <Route
+                  key={ele.identifier}
+                  exact
+                  path={ele.path}
+                  element={ele.components}
+                />
+              ))}
+            </Routes>
+          </Suspense>
         </div>
         <Footer />
       </Router>
