@@ -12,7 +12,7 @@ function App() {
       <Router>
         <div>
           <Navbar />
-          <Suspense fallback={<div></div>}>
+          
             <Routes>
               {routes.map((ele) => (
                 <Route
@@ -23,7 +23,7 @@ function App() {
                 />
               ))}
             </Routes>
-          </Suspense>
+          
         </div>
         <Footer />
       </Router>

@@ -1,10 +1,9 @@
-import { lazy } from "react";
-const Home = lazy(() => import("../component/pages/home/Home"));
-const About = lazy(() => import("../component/pages/about/About"));
-const Services = lazy(() => import("../component/pages/service/Service"));
-const Partners = lazy(() => import("../component/pages/partners/Partners"));
-const Careers = lazy(() => import("../component/pages/careers/Careers"));
-const Contact = lazy(() => import("../component/pages/contact/Contact"));
+import Home from "../component/pages/home/Home";
+import About from "../component/pages/about/About";
+import Services from "../component/pages/service/Service";
+import Partners from "../component/pages/partners/Partners";
+import Careers from "../component/pages/careers/Careers";
+import Contact from "../component/pages/contact/Contact";
 
 const routes = [
   {
